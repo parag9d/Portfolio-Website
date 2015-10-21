@@ -7,3 +7,20 @@ $(function() {
         event.preventDefault();
     });
 });
+// Highlight the top nav as scrolling occurs
+$('body').scrollspy({
+    target: '.navbar-fixed-top'
+})
+
+// Closes the Responsive Menu on Menu Item Click
+$('.navbar-collapse ul li a').click(function() {
+    $('.navbar-toggle:visible').click();
+});
+
+$( ".navbar-default .navbar-brand img" ).mouseover(function() {
+  $(this).attr('src', 'img/Logo/logo blue.png');
+});
+
+$( ".navbar-default .navbar-brand img" ).mouseout(function() {
+  $(this).attr('src', 'img/Logo/Logo white.png');
+});
