@@ -4,7 +4,7 @@ body {
 }
 
 .text-muted {
-    color: #777;
+    color: #666;
 }
 
 .text-primary {
@@ -206,12 +206,14 @@ fieldset[disabled] .btn-xl.active {
     color: #fff;
 }
 
-.navbar-default .nav li a:hover,
-.navbar-default .nav li a:focus {
+.navbar-default .nav li a:hover{
     outline: 0;
     color: #009cfc;
 }
 
+.navbar-default .nav li a:focus {
+    color: #FFF;
+}
 .navbar-default .navbar-nav>.active>a {
     border-radius: 0;
     color: #fff;
@@ -222,6 +224,18 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default .navbar-nav>.active>a:focus {
     color: #fff;
     background-color: #fec503;
+}
+
+@media(max-width:500px) {
+    .navbar-default .navbar-brand img{
+        width: 15px;
+    }
+}
+
+@media(max-width:767px) {
+    .navbar-default .navbar-brand img{
+        width: 25px;
+    }
 }
 
 @media(min-width:768px) {
@@ -743,7 +757,7 @@ ul.social-buttons li a {
     line-height: 40px;
     outline: 0;
     color: #fff;
-    background-color: #222;
+    background-color: #666;
     -webkit-transition: all .3s;
     -moz-transition: all .3s;
     transition: all .3s;
@@ -858,4 +872,10 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: #009cfc;
+}
+
+.line{
+       border-top: 1px solid rgba(185, 185, 185, 0.36);
+}
+
 }
