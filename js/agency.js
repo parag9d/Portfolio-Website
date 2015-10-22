@@ -22,5 +22,5 @@ $( ".navbar-default .navbar-brand img" ).mouseover(function() {
 });
 
 $( ".navbar-default .navbar-brand img" ).mouseout(function() {
-  $(this).attr('src', 'img/Logo/Logo white.png');
+  $(this).attr('src', 'img/Logo/logo white.png');
 });
